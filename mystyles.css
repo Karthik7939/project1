@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    background: #282c34;
+    color: #fff;
+}
+
+body{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    padding: 0 10px;
+    color: white;
+}
+body::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height:100%;
+    background: url("stormy.jpg"),
+     #000;
+    background-position: center;
+    
+    background-size: cover;
+    z-index:-1;
+}
+.wrapper {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 350px;
+    
+    text-align:center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-field input:focus {
+    border-color: #010101;
+}
+
+
+
+
+button#submission {
+    width: 100%;
+    padding: 5px 5px;
+    border: none;
+    background: #000; /* Button color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button#submission:hover {
+    background: #c7243f; /* Darker color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button#submission:active {
+    background: #b61616; /* Even darker color on click */
+    transform: scale(1);
+}
